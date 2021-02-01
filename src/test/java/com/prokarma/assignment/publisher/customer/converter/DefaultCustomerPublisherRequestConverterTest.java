@@ -30,7 +30,7 @@ class DefaultCustomerPublisherRequestConverterTest {
                 .maskKafkaCustomerRequest(getKafkaCustomerRequestForMaskingOnly());
         assertEquals("EE8987****", request.getCustomerNumber());
         assertEquals("**-**-1988", request.getBirthdate());
-        assertEquals("****shafi@gmail.com", request.getEmail());
+        assertEquals("****i.shaik999@gmail.com", request.getEmail());
     }
 
     private CustomerRequest getCustomerData() {
@@ -60,8 +60,8 @@ class DefaultCustomerPublisherRequestConverterTest {
     private KafkaCustomerRequest getKafkaCustomerRequestForMaskingOnly() {
         KafkaCustomerRequest customerRequest = new KafkaCustomerRequest();
         customerRequest.setCustomerNumber("EE89878765");
-        customerRequest.setBirthdate("11-02-1980");
-        customerRequest.setEmail("sshafi@gmail.com");
+        customerRequest.setBirthdate("11-02-1988");
+        customerRequest.setEmail("shafi.shaik999@gmail.com");
 
         return customerRequest;
     }

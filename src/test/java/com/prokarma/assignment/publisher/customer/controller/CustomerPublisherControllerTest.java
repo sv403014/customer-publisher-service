@@ -61,9 +61,9 @@ class CustomerPublisherControllerTest {
     private HttpHeaders buildHttpHeaders() {
         HttpHeaders headers = new HttpHeaders();
         headers.set("Content-Type", "application/json");
-        headers.set("Authorization", "bearer 5b2713db-00a8-491d-ae72-3b9f5fafa6ba");
+        headers.set("Authorization", "bearer fad7b52b-c8bb-4d21-9f24-7907707d9ecd");
         headers.set("Activity-Id", "customer-transaction");
-        headers.set("Application-Id", "retail-customer-app");
+        headers.set("Transaction-Id", "retail-customer-app");
         return headers;
     }
 

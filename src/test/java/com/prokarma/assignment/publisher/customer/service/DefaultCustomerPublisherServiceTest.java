@@ -45,7 +45,7 @@ class DefaultCustomerPublisherServiceTest {
         Mockito.doThrow(new TimeoutException()).when(kafkaTemplate).send(Mockito.any(),
                 Mockito.any());
 
-        assertThrows(ApplicationRuntimeException.class,
+        assertThrows(TimeoutException.class,
                 () -> defaultCustomerService.publishCustomerRequest(null));
     }
 

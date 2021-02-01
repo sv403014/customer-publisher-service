@@ -71,18 +71,18 @@ class CustomerPublisherControllerTest {
 
         CustomerRequest customerRequest = new CustomerRequest();
         customerRequest.setCustomerNumber("EE89878765");
-        customerRequest.setFirstName("dhananjay1");
-        customerRequest.setLastName("tiwari1234");
-        customerRequest.setBirthdate("01-12-1980");
+        customerRequest.setFirstName("shafi1");
+        customerRequest.setLastName("shaik234");
+        customerRequest.setBirthdate("11-02-1988");
         customerRequest.setCountry("India");
         customerRequest.setCountryCode("IN");
-        customerRequest.setMobileNumber("9898767654");
-        customerRequest.setEmail("phillips@gmail.com");
+        customerRequest.setMobileNumber("9866853904");
+        customerRequest.setEmail("shafi.shaik999@gmail.com");
         customerRequest.setCustomerStatus(CustomerStatus.OPEN);
 
         CustomerAddress address = new CustomerAddress();
-        address.setAddressLine1("address1");
-        address.setAddressLine2("address2");
+        address.setAddressLine1("Line1");
+        address.setAddressLine2("Line2");
         address.setStreet("Street");
         address.setPostalCode("76767");
 

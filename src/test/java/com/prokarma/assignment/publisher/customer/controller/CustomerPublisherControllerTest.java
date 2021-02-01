@@ -61,7 +61,7 @@ class CustomerPublisherControllerTest {
     private HttpHeaders buildHttpHeaders() {
         HttpHeaders headers = new HttpHeaders();
         headers.set("Content-Type", "application/json");
-        headers.set("Authorization", "bearer fad7b52b-c8bb-4d21-9f24-7907707d9ecd");
+        headers.set("Authorization", "bearer 83e1743e-c637-4e3f-b100-4ff2560bc29c");
         headers.set("Activity-Id", "customer-transaction");
         headers.set("Transaction-Id", "retail-customer-app");
         return headers;
@@ -71,8 +71,8 @@ class CustomerPublisherControllerTest {
 
         CustomerRequest customerRequest = new CustomerRequest();
         customerRequest.setCustomerNumber("EE89878765");
-        customerRequest.setFirstName("shafi1");
-        customerRequest.setLastName("shaik234");
+        customerRequest.setFirstName("shafi12345");
+        customerRequest.setLastName("shaik12345");
         customerRequest.setBirthdate("11-02-1988");
         customerRequest.setCountry("India");
         customerRequest.setCountryCode("IN");
@@ -81,8 +81,8 @@ class CustomerPublisherControllerTest {
         customerRequest.setCustomerStatus(CustomerStatus.OPEN);
 
         CustomerAddress address = new CustomerAddress();
-        address.setAddressLine1("Line1");
-        address.setAddressLine2("Line2");
+        address.setAddressLine1("line1");
+        address.setAddressLine2("line2");
         address.setStreet("Street");
         address.setPostalCode("76767");
 

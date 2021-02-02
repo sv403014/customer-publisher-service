@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 import com.prokarma.assignment.publisher.customer.constant.CustomerPublisherEnum;
 import com.prokarma.assignment.publisher.customer.domain.CustomerRequest;
 import com.prokarma.assignment.publisher.customer.kafka.domain.KafkaCustomerRequest;
+import com.prokarma.assignment.publisher.customer.util.ObjectMapperUtil;
 
 @Component
 public class DefaultCustomerPublisherRequestConverter
@@ -26,7 +27,7 @@ public class DefaultCustomerPublisherRequestConverter
         kafkaCustomerRequest.setEmail(customerRequest.getEmail());
         kafkaCustomerRequest
                 .setCustomerStatus(String.valueOf(customerRequest.getCustomerStatus().name()));
-        kafkaCustomerRequest.setAddress(customerRequest.getAddress().toString());
+        kafkaCustomerRequest.setAddress(ObjectMapperUtil.returnJsonFromObject(customerRequest.getAddress()));
         return kafkaCustomerRequest;
     }
 

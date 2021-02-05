@@ -21,9 +21,13 @@ public class DefaultCustomerPublisherService implements CustomerPublisherService
     KafkaTemplate<String, KafkaCustomerRequest> kafkaTemplate;
 
 
-    @Value("${producer.topic}")
+    /*
+     * @Value("${producer.topic}") private String topic;
+     */
+    
+    
+    @Value("${cloudkarafka.topic}")
     private String topic;
-
 
     @Autowired
     private DefaultCustomerPublisherRequestConverter defaultCustomerRequestConverter;
